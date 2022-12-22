@@ -1,0 +1,131 @@
+<html>
+
+<head>
+
+    <title>fish paradise</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap" rel="stylesheet"
+
+</head>
+
+<body>
+    <section id="banner">
+        <img src="img/pp1.png" class="logo">
+        <div class="banner-text">
+            <p>Contact Us For All Your Aquarium Needs</p>
+            <img src="img/bwkoi.gif">
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul class="Nav-li">
+                <li><a href="index.html"><span></span> HOME</a></li>
+                <li><a href="facilities.html"><span></span>FACILITIES</a></li>
+                <li><a href="service.html"><span></span>SERVICES</a></li>
+                <li><a href="food.html"><span></span>FISH FOOD</a></li>
+                <li><a href="contact.html"><span></span>CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="img/menu.png" id="menu">
+    </div>
+  
+    <!--aboutus-->
+      
+        <section id="about-us">
+            <div class="content">
+                <p>Contact</p>
+                <h1>Visit Shop Today</h1>
+            </div>
+        <div class="container">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>No:42,<br> Dewala Veediya,<br>Badulla.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>055-7584747</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>fishparadise@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <h2>Send Message...</h2>
+                    <div class="input-box">
+                        <input type="text" required="required" placeholder="Name">
+                        
+                    </div>
+                    <div class="input-box">
+                        <input type="text" required="required" placeholder="Email">
+                        
+                    </div>
+                    <div class="input-box">
+                        <textarea required="required" placeholder="Type your Message..."></textarea>
+                        
+                    </div>
+                    <div class="input-box">
+                        <button class="btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+      <!--footer-->
+
+
+      <footer>
+        <div class="footer-c">
+            <h3>Fish Paradise</h3>
+            <p>"Unlock the wonders of aquatic life with Fishparadise!"</p>
+            <div class="social-links">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 fishparadise. designed by- <span>lahiru</span></p>
+        </div>
+    </footer>
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right = "-200px"
+        menubtn.onclick = function () {
+            if (sideNav.style.right == "-200px") {
+                sideNav.style.right = "0";
+                menu.src = "img/close.png";
+            }
+            else {
+                sideNav.style.right = "-200px";
+                menu.src = "img/menu.png";
+            }
+        }
+    </script>
+   
+
+</body>
+
+</html>

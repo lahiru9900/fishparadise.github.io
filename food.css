@@ -1,0 +1,83 @@
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0,0.01), #0a33a5), url("img/e.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text img{
+    width: 150px;
+}
+/*--food--*/
+#feature {
+    width: 100%;
+    padding: 50px auto;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    
+    #banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), #0c339e), url("img/lsc4.jpg");
+        background-position:center;
+        height: 100vh;
+        
+    }
+}
+
+table{
+    position:relative;
+    left: 30%;
+    border-collapse: collapse;
+    transform: translate(-10%,-10%);
+    width: 800px;
+    border: 1px solid #0a33a5;
+    box-shadow: 0 10px 20px 3px #494d58;
+
+}
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+tr{ 
+    cursor: pointer;
+}
+tr:hover{
+    background-color:#68a9d4;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px 3px #494d58;
+}
+th,td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #0a33a5;
+
+}
+#header{
+    background-color: #0c339e;
+    color: #fff;
+
+}
+.tb{
+    display:block;
+    padding-bottom: 10px;
+}
+.h h2{
+    text-align: center;
+    
+}
+
+table img{
+    width: 50px;
+    border-radius: 30%;
+    background: #0a33a5;
+}
+caption h2{
+    color: #0c339e;
+}
+@media screen and (max-width: 700px){
+    table{
+        position:relative;
+        left: 20%;
+        width: 100px;
+    }
+}

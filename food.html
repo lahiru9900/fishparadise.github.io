@@ -1,0 +1,171 @@
+<html>
+
+<head>
+
+    <title>fish paradise</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="banner">
+        <img src="img/pp1.png" class="logo">
+        <div class="banner-text">
+            <p>Provide Your Fish With The Right Food And Care For Healthy Aqutic Paradise</p>
+            <img src="img/gif3.gif">   
+        </div>
+
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul class="Nav-li">
+                <li><a href="index.html"><span></span> HOME</a></li>
+                <li><a href="facilities.html"><span></span>FACILITIES</a></li>
+                <li><a href="service.html"><span></span>SERVICES</a></li>
+                <li><a href="food.html"><span></span>FISH FOOD</a></li>
+                <li><a href="contact.html"><span></span>CONTACT </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="img/menu.png" id="menu">
+    </div>
+
+
+
+    <!--food-->
+    <section id="feature">
+        <div class="title-text">
+            <p>FOOD & CARE</p>
+            <h1>To Healthy Fish</h1>
+        </div>
+        <table>
+            <caption><h2>FOOD</h2></caption>
+            <tr id="header">
+                <th>Name</th>
+                <th></th>
+                <th>Qty</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Hikari</td>
+                <td><img src="img/hikari.png" alt=""></td>
+                <td>1kg</td>
+                <td>2000/=</td>
+            </tr>
+            <tr>
+                <td>Royle Red</td>
+                <td><img src="img/royalred.png" alt=""></td>
+                <td>1kg</td>
+                <td>2200/=</td>
+            </tr>
+            <tr>
+                <td>Coppens</td>
+                <td><img src="img/Coppens.png" alt=""></td>
+                <td>1kg</td>
+                <td>2000/=</td>
+            </tr>
+            <tr>
+                <td>Humpy Head</td>
+                <td><img src="img/humpy.png" alt=""></td>
+                <td>500g</td>
+                <td>2000/=</td>
+            </tr>
+            <tr>
+                <td>Ever Red</td>
+                <td><img src="img/everred.png" ></td>
+                <td>500g</td>
+                <td>2000/=</td>
+            </tr>
+         
+        </table>
+    </section>
+    <section>
+        
+        <table>
+            <caption><h2>CARE</h2></caption>
+            <tr id="header">
+                <th>Name</th>
+                <th></th>
+                <th>Qty</th>
+                <th>Price</th>
+            </tr>  
+            <tr>
+                <td>Anti Fungus</td>
+                <td><img src="img/af.png" alt=""></td>
+                <td>120ml</td>
+                <td>180/=</td>
+            </tr>
+            <tr>
+                <td>Fish Care Blue</td>
+                <td><img src="img/fc.png" alt=""></td>
+                <td>120ml</td>
+                <td>180/=</td>
+            </tr>
+            <tr>
+                <td>Tripple Care</td>
+                <td><img src="img/tc.png" alt=""></td>
+                <td>120ml</td>
+                <td>200/=</td>
+            </tr>
+            <tr>
+                <td>Anti Clorine</td>
+                <td><img src="img/antc.png" alt=""></td>
+                <td>120ml</td>
+                <td>180/=</td>
+            </tr>
+            <tr>
+                <td>Fish Biotic</td>
+                <td><img src="img/biotic.png" alt=""></td>
+                <td>25 tablets</td>
+                <td>500/=</td>
+            </tr>
+        </table>
+   
+
+    </section>
+
+    <!--footer-->
+
+
+    <footer>
+        <div class="footer-c">
+            <h3>Fish Paradise</h3>
+            <p>"Unlock the wonders of aquatic life with Fishparadise!"</p>
+            <div class="social-links">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 fishparadise designed by- <span>lahiru</span></p>
+        </div>
+    </footer>
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right = "-200px"
+        menubtn.onclick = function () {
+            if (sideNav.style.right == "-200px") {
+                sideNav.style.right = "0";
+                menu.src = "img/close.png";
+            }
+            else {
+                sideNav.style.right = "-200px";
+                menu.src = "img/menu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<html>
+
+<head>
+
+    <title>fish paradise</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap" rel="stylesheet"
+
+</head>
+
+<body>
+    <section id="banner">
+        <img src="img/pp1.png" class="logo">
+        <div class="banner-text">
+            <p>We Are Ready To Make Your Work Easier</p>
+            <img src="img/gif2.gif">   
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul class="Nav-li">
+                <li><a href="index.html"><span></span> HOME</a></li>
+                <li><a href="facilities.html"><span></span>FACILITIES</a></li>
+                <li><a href="service.html"><span></span>SERVICES</a></li>
+                <li><a href="food.html"><span></span>FISH FOOD</a></li>
+                <li><a href="contact.html"><span></span>CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="img/menu.png" id="menu">
+    </div>
+ 
+    </section>
+     <!----service---->
+     <section id="service">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="img/p1.jpg">
+                <div class="overlay"></div>
+                <div class="service-dscp">
+                    <h3>Tank Setup</h3>
+                    <hr>
+                    <p>We Will Setup Your Dream Fish Tank</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/p2.jpeg">
+                <div class="overlay"></div>
+                <div class="service-dscp">
+                    <h3>Cleaning Tank</h3>
+                    <hr>
+                    <p>If Cleaning Tank Is a Problem,Call Us</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/p3.jpg">
+                <div class="overlay"></div>
+                <div class="service-dscp">
+                    <h3>Creating Fish Tank </h3>
+                    <hr>
+                    <p>Tank Design You Need In Diffrent Size</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/p4.jpg">
+                <div class="overlay"></div>
+                <div class="service-dscp">
+                    <h3>Caring Fish</h3>
+                    <hr>
+                    <p>All Medicines Related To Fish Diseases In One Place</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+
+
+    <footer>
+        <div class="footer-c">
+            <h3>Fish Paradise</h3>
+            <p>"Unlock the wonders of aquatic life with Fishparadise!"</p>
+            <div class="social-links">
+                <i class="fa fa-facebook"></i> 
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 fishparadise designed by- <span>lahiru</span></p>
+        </div>
+    </footer>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right = "-200px"
+        menubtn.onclick = function () {
+            if (sideNav.style.right == "-200px") {
+                sideNav.style.right = "0";
+                menu.src = "img/close.png";
+            }
+            else {
+                sideNav.style.right = "-200px";
+                menu.src = "img/menu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

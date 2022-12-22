@@ -1,0 +1,168 @@
+<html>
+
+<head>
+
+    <title>fish paradise</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="banner">
+        <img src="img/pp1.png" class="logo">
+        <div class="banner-text">
+            <p>Fish Bring Mental Happiness</p>
+            <div class="search-bar">
+                <input type="text" placeholder="search...." name="q">
+                <button type="submit"><img src="img/sr.png"></button>
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul class="Nav-li">
+                <li><a href="index.html"><span></span> HOME</a></li>
+                <li><a href="facilities.html"><span></span> FACILITIES</a></li>
+                <li><a href="service.html"><span></span> SERVICES</a></li>
+                <li><a href="food.html"><span></span> FISH FOOD</a></li>
+                <li><a href="contact.html"><span></span> CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="img/menu.png" id="menu">
+    </div>
+    <!----Features---->
+
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <div class="feature-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>"Fish Paradise is the go-to destination for all of your aquarium needs. Our experienced staff
+                            is knowledgeable and passionate about fish care, and they are always ready to provide expert
+                            advice and assistance. Whether you need help setting up a new tank or just want to chat with
+                            one of our experts about your current setup, we are here to help. Thank you for choosing
+                            Fish Paradise."</p>
+                    </div>
+                </div>
+                <h1>New Technology</h1>
+                <div class="feature-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-wrench"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>"Come check out the new technology at Fish Paradise! Our aquarium service uses the latest
+                            equipment and techniques to keep your fish healthy and your aquarium looking its best. Trust
+                            us to provide the best care for your aquatic friends. Thank you for choosing Fish Paradise."
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="features-img">
+                <img src="img/clean.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--testimonial-->
+    <section id="testimonial">
+        <div class="title-text">
+            <p>TESTIMONIAL</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="testimonial-row ">
+            <div class="testimoniali-col">
+                <div class="user">
+                    <img src="https://avatars.dicebear.com/api/avataaars/john.svg">
+                    <div class="user-info">
+                        <h4>John S. <i class="fa fa-twitter"></i></h4>
+                        <small>@john</small>
+                    </div>
+                </div>
+                <p>Fishparadise provided excellent service when I was creating a custom fish tank for my home. The team
+                    was very knowledgeable and helpful, and the finished product exceeded my expectations. Highly
+                    recommended</p>
+            </div>
+            <div class="testimoniali-col">
+                <div class="user">
+                    <img src="https://avatars.dicebear.com/api/avataaars/female/happy/sara.svg">
+                    <div class="user-info">
+                        <h4>Sarah M. <i class="fa fa-twitter"></i></h4>
+                        <small>@sarah</small>
+                    </div>
+                </div>
+                <p>Fishparadise was great when I needed my fish tank cleaned. The crew was professional and friendly,
+                    and they worked quickly and efficiently. I would highly recommend them to anyone looking for quality
+                    fish tank services</p>
+            </div>
+            <div class="testimoniali-col">
+                <div class="user">
+                    <img src="https://avatars.dicebear.com/api/avataaars/male/happy/%20Steve.svg">
+                    <div class="user-info">
+                        <h4>Steve B.<i class="fa fa-twitter"></i></h4>
+                        <small>@steve</small>
+                    </div>
+                </div>
+                <p>"I recently bought some fish from Fishparadise and I was really impressed with the selection and
+                    quality of their products. The customer service was also top notch, they answered all my questions
+                    and made sure I was happy with my purchase. Highly recommended </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer-->
+
+
+    <footer>
+        <div class="footer-c">
+            <h3>Fish Paradise</h3>
+            <p>"Unlock the wonders of aquatic life with Fishparadise!"</p>
+            <div class="social-links">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 fishparadise designed by- <span>lahiru</span></p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right = "-200px"
+        menubtn.onclick = function () {
+            if (sideNav.style.right == "-200px") {
+                sideNav.style.right = "0";
+                menu.src = "img/close.png";
+            }
+            else {
+                sideNav.style.right = "-200px";
+                menu.src = "img/menu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

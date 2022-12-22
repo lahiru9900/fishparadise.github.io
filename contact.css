@@ -1,0 +1,181 @@
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0,0.01), #0a33a5), url("img/f.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text img{
+    width: 300px;
+}
+/*--aboutus--*/
+
+#about-us{
+    position:relative;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(142, 143, 143,0.2);
+}
+
+.content{
+    text-align: center;
+    padding: 70px;
+
+}
+
+.content p {
+    margin: auto;
+    font-size: 20px;
+    color: #0c339e;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.content p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#0c339e, #fff);
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: -1; 
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.container .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    
+    
+}
+.container .contact-info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contact-info .box .icon{
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    background: #3d6ae6;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.container .contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+.container .contact-info .box .text h3{
+    font-weight: 500;
+    color: #3d6ae6;
+
+}
+.contact-form{
+    width: 40%;
+    padding: 40px;
+    background: #3d6ae6;
+
+}
+.contact-form h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    
+
+}
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    background: transparent;
+    resize: none;
+}
+.contact-form .input-box ::placeholder{
+    position: absolute;
+    left: 0;
+    padding:0;
+    top: 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #051b57;
+}
+
+.contact-form .input-box .btn{
+    width: 100px;
+    background: #fff;
+    color: #3d6ae6;
+    border: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-size: 20px;
+}
+@media screen and (max-width: 700px) {
+    #about-us{
+        padding: 50px;
+    }
+    .content h1 {
+        font-size: 30px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contact-info{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .container .contact-form{
+        width: 100%;
+    }
+    .container .contact-form h2{
+        font-size:25px ;
+    }
+    .contact-form .input-box input[type="submit"]{
+        width: 70px;
+        font-size: 15px;
+    }
+    #banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), #0c339e), url("img/lsc5.jpeg");
+        background-position:center;
+        height: 100vh;
+        
+    }
+
+}
